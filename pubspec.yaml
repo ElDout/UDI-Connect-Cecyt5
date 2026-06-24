@@ -1,0 +1,45 @@
+name: udi_connect
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.1.2
+  shared_preferences: ^2.2.3
+  http: ^1.6.0
+  http_parser: ^4.0.0
+  url_launcher: ^6.2.5
+  intl: ^0.20.2
+  file_picker: ^11.0.2
+  firebase_core: ^4.9.0
+  firebase_messaging: ^16.2.2
+  flutter_local_notifications: ^21.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # 1. Moví esto aquí con los espacios correctos (2 espacios)
+  flutter_launcher_icons: ^0.13.1
+
+# 2. Añadimos la configuración al final (PEGADO AL MARGEN IZQUIERDO)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/iconos/logo_udi.jpeg" # <--- Cambié .png por .jpeg
+  adaptive_icon_background: "#000022"
+  adaptive_icon_foreground: "assets/iconos/logo_udi.jpeg" # <--- También aquí
+
+flutter:
+  uses-material-design: true
+
+  # 3. IMPORTANTE: Tienes que declarar la carpeta de assets aquí también
+  assets:
+    - assets/iconos/
